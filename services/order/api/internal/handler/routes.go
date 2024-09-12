@@ -16,30 +16,30 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		[]rest.Route{
 			{
 				Method:  http.MethodPost,
-				Path:    "/api/order/create",
+				Path:    "/order/info/create",
 				Handler: CreateHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodPost,
-				Path:    "/api/order/detail",
+				Path:    "/order/info/detail",
 				Handler: DetailHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodPost,
-				Path:    "/api/order/list",
+				Path:    "/order/info/list",
 				Handler: ListHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodPost,
-				Path:    "/api/order/remove",
+				Path:    "/order/info/remove",
 				Handler: RemoveHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodPost,
-				Path:    "/api/order/update",
+				Path:    "/order/info/update",
 				Handler: UpdateHandler(serverCtx),
 			},
 		},
-		rest.WithJwt(serverCtx.Config.Auth.AccessSecret),
+		// rest.WithJwt(serverCtx.Config.Auth.AccessSecret),
 	)
 }
