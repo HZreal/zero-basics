@@ -3,12 +3,12 @@ Host: 0.0.0.0
 Port: 8002
 
 Mysql:
-  DataSource: root:root123456@tcp(mysql:53306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+  DataSource: root:root123456@tcp(127.0.0.1:53306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
 
 CacheRedis:
   - Host: 127.0.0.1:56379
-    Type: node
-    Pass:
+#    Type: node
+#    Pass:
 
 Auth:
   AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
