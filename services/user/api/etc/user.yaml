@@ -6,7 +6,7 @@ Mysql:
   DataSource: root:root123456@tcp(127.0.0.1:53306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
 
 CacheRedis:
-  - Host: redis:56379
+  - Host: redis:56378
 #    Pass:
 #    Type: node
 
@@ -18,7 +18,7 @@ Auth:
 UserRpc:
   Etcd:
     Hosts:
-      - 127.0.0.1:42379
+      - 127.0.0.1:52379
     User: root
     Pass: root123456
     Key: user.rpc

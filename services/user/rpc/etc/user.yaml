@@ -4,7 +4,7 @@ Salt: HWVOFkGgPTryzICwd7qnJaZR9KQ2i8xe
 
 Etcd:
   Hosts:
-    - 127.0.0.1:42379
+    - 127.0.0.1:52379
   User: root
   Pass: root123456
   Key: user.rpc
@@ -13,7 +13,7 @@ Mysql:
   DataSource: root:root123456@tcp(127.0.0.1:53306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
 
 CacheRedis:
-  - Host: 127.0.0.1:56379
+  - Host: 127.0.0.1:56378
 #    Type: node
 #    Pass:
 
