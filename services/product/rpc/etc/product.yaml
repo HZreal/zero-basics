@@ -1,0 +1,17 @@
+Name: product.rpc
+ListenOn: 0.0.0.0:9003
+
+Etcd:
+  Hosts:
+    - 127.0.0.1:52379
+  User: root
+  Pass: root123456
+  Key: product.rpc
+
+Mysql:
+  DataSource: root:root123456@tcp(127.0.0.1:53306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+
+CacheRedis:
+  - Host: 127.0.0.1:56378
+#    Type: node
+#    Pass:
