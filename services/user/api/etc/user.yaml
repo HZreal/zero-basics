@@ -6,16 +6,18 @@ Mysql:
   DataSource: root:root123456@tcp(127.0.0.1:53306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
 
 CacheRedis:
-  - Host: redis:56378
-#    Pass:
-#    Type: node
+  - Host: 127.0.0.1:56378
+    Pass:
+    Type: node
 
 Auth:
   AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
   AccessExpire: 86400
 
-
 UserRpc:
+  App: userapi                          # App 标识
+  Token: 6jKNZbEpYGeUMAifz10gOnmoty3TV  # Token 值
+
   Etcd:
     Hosts:
       - 127.0.0.1:52379

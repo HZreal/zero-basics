@@ -12,8 +12,16 @@ Etcd:
 Mysql:
   DataSource: root:root123456@tcp(127.0.0.1:53306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
 
+Auth: true               # 是否开启 Auth 验证
+#StrictControl: true      # 是否开启严格模式
+Redis:                   # 指定 Redis 服务
+  Key: rpc:auth:user     # 指定 Key 应为 hash 类型
+  Host: 127.0.0.1:56378
+  Type: node
+  Pass:
+
 CacheRedis:
   - Host: 127.0.0.1:56378
-#    Type: node
-#    Pass:
+    Type: node
+    Pass:
 
