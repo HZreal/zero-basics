@@ -21,7 +21,6 @@ var configFile = flag.String("f", "etc/pay.yaml", "the config file")
 func main() {
 	flag.Parse()
 
-	// 111
 	var c config.Config
 	conf.MustLoad(*configFile, &c)
 	ctx := svc.NewServiceContext(c)
